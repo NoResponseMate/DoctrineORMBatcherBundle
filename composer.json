@@ -11,7 +11,7 @@
     "require": {
         "php": ">=7.2",
         "doctrine/doctrine-bundle": "^1.0 || ^2.0",
-        "setono/doctrine-orm-batcher": "^0.6",
+        "setono/doctrine-orm-batcher": "^0.6 || dev-update-deps/doctrine-persistance",
         "symfony/config": "^4.4 || ^5.0 || ^6.0",
         "symfony/dependency-injection": "^4.4 || ^5.0 || ^6.0",
         "symfony/framework-bundle": "^4.4 || ^5.0 || ^6.0"
@@ -25,6 +25,12 @@
         "roave/security-advisories": "dev-master",
         "symplify/easy-coding-standard": ">=6.0",
         "thecodingmachine/phpstan-safe-rule": "^1.0.1"
+    },
+    "repositories": {
+        "setono/doctrine-orm-batcher": {
+            "type": "vcs",
+            "url": "https://github.com/NoResponseMate/DoctrineORMBatcher.git"
+        }
     },
     "config": {
         "sort-packages": true,
